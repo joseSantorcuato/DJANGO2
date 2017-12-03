@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django Forms Tutorial</title>
+</head>
+<body>
+<h2>Django ejemplo forms</h2>
+<form method="post" action="/getdata/">
+    <table>
+        <tr>
+            <td>Nombre</td>
+            <td><strong>{{ name }}</strong></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><strong>{{ email }}</strong></td>
+        </tr>
+        <tr>
+            <td>Teléfono</td>
+            <td><strong>{{ phone }}</strong></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

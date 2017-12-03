@@ -1,0 +1,48 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+   <link rel="stylesheet" type="text/css" href="{% static 'estilo.css' %}" />
+<title>Proyecto</title>
+
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Proyecto</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Inicio</a></li>
+ 
+          <li><a href="#">Hablar</a></li>
+          <li><a href="#">Escuchar</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row">
+      <h2>Nombre proyecto</h2>
+      <div class="col-xs-12 center-block text-center" >{{ nom }}</div>
+      <h2>Autor</h2>
+      <div class="col-xs-12 center-block text-center">{{ autor }}</div>
+    </div>
+
+</div>
+</body>
+</html>
